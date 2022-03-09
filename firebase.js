@@ -3,10 +3,13 @@ import firebase from "firebase";
 import "firebase/storage";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
+import getConfig from "next/config";
+
+const { serverRuntimeConfig } = getConfig();
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
+  apiKey: serverRuntimeConfig.api_key,
   authDomain: "facebook-b24ea.firebaseapp.com",
   projectId: "facebook-b24ea",
   storageBucket: "facebook-b24ea.appspot.com",

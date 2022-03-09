@@ -1,12 +1,15 @@
 import NextAuth from "next-auth";
 import FacebookProvider from "next-auth/providers/facebook";
+import getConfig from "next/config";
+
+const { serverRuntimeConfig } = getConfig();
 
 export default NextAuth({
   // Configure one or more authentication providers
   providers: [
     FacebookProvider({
-      clientId: process.env.FACEBOOK_ID,
-      clientSecret: process.env.FACEBOOK_SECRET,
+      clientId: serverRuntimeConfig.facebook_id,
+      clientSecret: serverRuntimeConfig.facebook_secret,
     }),
   ],
 });
