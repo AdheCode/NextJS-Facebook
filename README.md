@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Facebook Clone
 
-## Getting Started
+![screenshot image](/screenshot.png)
 
-First, run the development server:
+- Demo: <https://facebook-adhecode.vercel.app/>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This project is a simple Facebook clone with Facebook Account. It was created with NextJS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tools used
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Authentication with Facebook
+- Firestore Database
+- TailwindCSS
+- [Heroicons](https://heroicons.com/)
+- [Next-Auth](https://next-auth.js.org/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Available Scripts
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+In the project directory, you can run:
 
-## Learn More
+### `npm start`
 
-To learn more about Next.js, take a look at the following resources:
+Runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `npm test`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Launches the test runner in the interactive watch mode.
 
-## Deploy on Vercel
+### `npm run build`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+### User Stories
+
+- User can login with own account Facebook
+- User can write posts
+- User can logout
+
+Please feel free to create a pull request and submit any issues!
